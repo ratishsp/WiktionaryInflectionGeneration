@@ -1,0 +1,10 @@
+This library generates inflections for syntactic categories including verb, noun and adjectives making use of wiktionary to generate the inflections.
+Steps to run the code:
+Each syntactic category will have two categories of files: *WikiXMLParser and *InflectionGeneration
+For instance, VerbWikiXMLParser and VerbInflectionGeneration
+
+WikiXMLParser parses input wiktionary dump and creates serialized output of morphological inflections mapped to input root form.
+InflectionGeneration queries the serialized dump to obtain inflection forms for the input root form.
+
+Thus for any syntactic category, *WikiXMLParser needs to be only run once.
+*InflectionGeneration needs to be run everytime a root form is queried for inflections.
